@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Container for the header */
+.header-container {
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+/* Header Styling */
+h1 {
+    color: #007bff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Subheading */
+h3 {
+    color: #444;
+    font-size: 18px;
+}
+
+/* Question Papers List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 12px 0;
+}
+
+/* PDF Links */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Back to Home Button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #007bff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #0056b3;
+}
