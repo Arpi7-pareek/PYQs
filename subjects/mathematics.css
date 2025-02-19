@@ -8,52 +8,80 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #ff8c00, #ff4500);  /* Orange-Red Gradient */
-    height: 100vh;
+    background: linear-gradient(to right, #ff8c00, #ff4500); /* Orange-Red Gradient */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
+    flex-direction: column;
 }
 
+/* Main Container */
 .container {
-    background: rgba(255, 204, 102, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     padding: 25px;
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
-    width: 50%;
+    width: 80%;
+    max-width: 700px;
 }
 
+/* Heading */
 h1 {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 600;
     color: #333;
+    margin-bottom: 15px;
 }
 
+/* Subheading */
 p {
-    font-size: 16px;
+    font-size: 18px;
     color: #444;
 }
 
+/* List of Question Papers */
 .subjects {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+    align-items: flex-start; /* Align links to the left */
+    gap: 12px;
+    margin-top: 15px;
+    width: 100%;
+    padding-left: 20px; /* Adds some left spacing */
 }
 
-a {
+/* PDF Links */
+.subjects a {
     text-decoration: none;
     font-weight: 600;
-    color: blue;
-    transition: color 0.3s;
+    color: #007bff;
+    transition: color 0.3s, transform 0.2s;
     font-size: 18px;
 }
 
-a:hover {
-    color: darkblue;
+.subjects a:hover {
+    color: #0056b3;
+    transform: scale(1.05);
 }
-html {
-    background: linear-gradient(to right, #ff8c00, #ff4500) !important;
+
+/* Back to Home Button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #007bff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
 }
