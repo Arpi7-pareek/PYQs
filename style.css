@@ -1,25 +1,24 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-/* Full-page gradient background */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(45deg, #b71c1c, #ff6f00);
-    background-attachment: fixed;
-    background-size: 100% 100%; /* Ensures no visible break */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Container box with smooth gradient */
-.container {
-    max-width: 800px;
-    background: linear-gradient(45deg, #ffcc80, #ffb74d);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Year Question Papers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Previous Year Question Papers</h1>
+        <p>Select a subject to view question papers:</p>
+        <div class="subjects">
+            <a href="maths.html">Mathematics</a>
+            <a href="chemistry.html">Chemistry</a>
+            <a href="english.html">English</a>
+            <a href="physics.html">Physics</a>
+            <a href="bee.html">BEE</a>
+            <a href="wt.html">WT</a>
+            <a href="pps.html">PPS</a>
+        </div>
+    </div>
+</body>
+</html>
