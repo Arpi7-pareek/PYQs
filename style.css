@@ -1,38 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #c94b4b, #ffb347);
-    height: 100vh;
+/* Full-page gradient background */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #b71c1c, #ff6f00);
+    background-attachment: fixed;
+    background-size: 100% 100%; /* Ensures no visible break */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
 }
 
+/* Container box with smooth gradient */
 .container {
-    background: linear-gradient(135deg, #fbd786, #f7797d);
-    padding: 20px 40px;
+    max-width: 800px;
+    background: linear-gradient(45deg, #ffcc80, #ffb74d);
+    padding: 30px;
     border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
-h1 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-}
-
-p {
-    font-size: 16px;
-    color: #444;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
 
 li {
     margin: 10px 0;
