@@ -1,25 +1,25 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* Full-page gradient with a darker shade */
+/* Full-page gradient background */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(45deg, #b71c1c, #ff6f00); /* Darker red & orange */
+    background: linear-gradient(45deg, #b71c1c, #ff6f00);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% 100%; /* Ensures no visible break */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Light-colored container box */
+/* Container box with smooth gradient */
 .container {
     max-width: 800px;
-    background: linear-gradient(45deg, #ffcc80, #ffb74d); /* Lighter orange gradient */
+    background: linear-gradient(45deg, #ffcc80, #ffb74d);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
