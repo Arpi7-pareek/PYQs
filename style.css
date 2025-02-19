@@ -54,3 +54,7 @@ a {
 a:hover {
     color: darkblue;
 }
+html {
+    background: linear-gradient(to right, #ff8c00, #ff4500) !important;
+}
+
