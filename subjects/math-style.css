@@ -7,26 +7,31 @@ body {
 }
 
 .container {
-    max-width: 800px;
-    margin: auto;
+    max-width: 700px;
+    margin: 50px auto;
     padding: 20px;
     background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-top: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: left;  /* Align content inside container to left */
 }
 
 h1 {
     color: #007bff;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;  /* Keep heading centered */
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+    margin-left: 20px; /* Slight left margin for better alignment */
 }
 
 ul li {
     margin: 10px 0;
+    font-size: 18px;
 }
 
 a {
@@ -39,15 +44,20 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Back to Home Button Styling */
 .back-home {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 15px;
+    padding: 12px 20px;
     background-color: #007bff;
     color: white;
-    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-align: center;
 }
 
 .back-home:hover {
     background-color: #0056b3;
+    text-decoration: none;
 }
