@@ -2,25 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 /* General Styling */
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(45deg, #ff0000, #ffcc00); /* Red to Yellow Gradient */
-    color: white;
+ body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    text-align: center;
+    background: linear-gradient(45deg, #b71c1c, #ff6f00); /* Darker red & orange */
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Container Styling */
 .container {
     max-width: 800px;
-    margin: auto;
-    background: rgba(255, 255, 255, 0.1); /* Transparent White */
-    padding: 20px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #ffcc80, #ffb74d); /* Lighter orange gradient */
+    padding: 30px;
     border-radius: 15px;
-    margin-top: 50px;
-    backdrop-filter: blur(10px); /* Glass effect */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    text-align: center;
 }
 
 /* Header Styling */
