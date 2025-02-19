@@ -4,7 +4,87 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff8c00, #ff4500); 
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Main Container */
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Heading */
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* List of Question Papers */
+.subjects {
+    list-style: none; /* Removes default bullets */
+    padding: 0;
+    text-align: left;
+}
+
+.subjects li {
+    padding: 8px 0;
+    font-size: 18px;
+}
+
+/* PDF Links */
+.subjects a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #007bff;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.subjects a:hover {
+    color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Back to Home Button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #007bff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
 
 body {
     font-family: 'Poppins', sans-serif;
