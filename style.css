@@ -1,4 +1,6 @@
+/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 /* Full-page gradient background */
 html, body {
     height: 100%;
@@ -20,21 +22,4 @@ html, body {
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
-}
-
-
-li {
-    margin: 10px 0;
-}
-
-a {
-    text-decoration: none;
-    font-size: 18px;
-    color: blue;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: darkblue;
 }
