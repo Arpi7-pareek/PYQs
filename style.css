@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #ff8c00, #ff4500);
+    background: linear-gradient(to right, #ff8c00, #ff4500);  /* Orange-Red Gradient */
     height: 100vh;
     display: flex;
     justify-content: center;
