@@ -1,60 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #ff8c00, #ff4500);  /* Orange-Red Gradient */
-    height: 100vh;
+    background: linear-gradient(to right, #ff8c00, #ff4500);
+    min-height: 100vh;
+    overflow-y: auto; /* Enable scrolling */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
 }
 
+/* Main Container */
 .container {
     background: rgba(255, 204, 102, 0.95);
     padding: 25px;
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
-    width: 50%;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80vh; /* Prevents overflow */
+    overflow-y: auto; /* Enables scrolling */
 }
 
+/* Heading */
 h1 {
     font-size: 26px;
     font-weight: 600;
     color: #333;
+    margin-bottom: 10px;
 }
 
+/* Subheading */
 p {
     font-size: 16px;
     color: #444;
+    margin-bottom: 15px;
 }
 
+/* Subjects List - Grid Layout */
 .subjects {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
-    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
 }
 
-a {
+/* Subject Links */
+.subjects a {
     text-decoration: none;
     font-weight: 600;
     color: blue;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.2s;
     font-size: 18px;
-}
-
-a:hover {
-    color: darkblue;
-}
-html {
-    background: linear-gradient(to right, #ff8c00, #ff4500) !important;
-}
-
+    padding: 8px;
+    background: white;
