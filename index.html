@@ -3,22 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PYQs - Previous Year Question Papers</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Subjects Carousel</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        h1 { color: #333; }
-        .container { max-width: 600px; margin: auto; }
-        a { display: block; margin: 10px 0; text-decoration: none; color: blue; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .scroll-container {
+            display: flex;
+            overflow-x: auto; /* Enables horizontal scrolling */
+            gap: 15px;
+            padding: 10px;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+        }
+        .subject-card {
+            min-width: 200px; /* Increased width for long subject names */
+            height: 100px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-align: center;
+            padding: 10px;
+        }
+        .subject-card:hover {
+            background-color: #2980b9;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Previous Year Question Papers</h1>
-        <p>Select a subject to view question papers:</p>
-        <a href="papers/math.html">Mathematics</a>
-        <a href="papers/physics.html">Physics</a>
-        <a href="papers/chemistry.html">Chemistry</a>
+
+    <h2>Subjects</h2>
+    <div class="scroll-container">
+        <div class="subject-card">Maths</div>
+        <div class="subject-card">Chemistry</div>
+        <div class="subject-card">Physics</div>
+        <div class="subject-card">Workshop Technology</div>
+        <div class="subject-card">English</div>
+        <div class="subject-card">Basic Electrical Engineering</div>
+        <div class="subject-card">Programming for Problem Solving</div>
     </div>
+
 </body>
 </html>
