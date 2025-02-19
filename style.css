@@ -23,3 +23,23 @@ html, body {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
+.subject-list {
+    list-style: none;
+    padding: 0;
+}
+
+.subject-list li {
+    margin: 10px 0;
+}
+
+.subject-list a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: blue;
+    transition: color 0.3s ease-in-out;
+}
+
+.subject-list a:hover {
+    color: darkblue;
+}
