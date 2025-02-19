@@ -1,8 +1,8 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* General Styling */
- body {
+/* Full-page gradient with a darker shade */
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@
     align-items: center;
 }
 
-/* Container Styling */
+/* Light-colored container box */
 .container {
     max-width: 800px;
     background: linear-gradient(45deg, #ffcc80, #ffb74d); /* Lighter orange gradient */
@@ -22,47 +22,4 @@
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
     text-align: center;
-}
-
-/* Header Styling */
-h1 {
-    color: #fff;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-}
-
-/* Link Styling */
-a {
-    display: block;
-    margin: 10px 0;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #fff;
-    transition: 0.3s;
-}
-
-a:hover {
-    color: #ffeb3b; /* Bright Yellow */
-    text-decoration: underline;
-}
-
-/* Button Styling */
-.back-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #ff0000;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    transition: 0.3s;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.back-button:hover {
-    background-color: #ffcc00;
-    color: #333;
 }
