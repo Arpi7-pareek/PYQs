@@ -1,37 +1,39 @@
-/* Modern Aesthetic Styling for PYQs Website */
+/* Modern, Aesthetic CSS for PYQs Website */
 
-/* Smooth gradient background */
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: white;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
     margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
+    transition: background 0.3s ease-in-out;
 }
 
-/* Centered Card with Glassmorphism Effect */
+/* Container Styling */
 .container {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
     border-radius: 15px;
-    padding: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width: 400px;
-    width: 90%;
+    transition: transform 0.3s ease-in-out;
 }
 
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Title Styling */
 h1 {
+    color: #333;
     font-size: 24px;
-    margin-bottom: 15px;
     font-weight: bold;
 }
 
-/* Links for Selection */
+/* List Styling */
 ul {
     list-style: none;
     padding: 0;
@@ -39,51 +41,60 @@ ul {
 
 ul li {
     margin: 10px 0;
-}
-
-ul li a {
-    display: block;
-    padding: 12px;
-    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    background: #fff;
     border-radius: 8px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease-in-out;
 }
 
-ul li a:hover {
-    background: rgba(255, 255, 255, 0.4);
-    transform: scale(1.05);
+ul li:hover {
+    background: #74ebd5;
+    transform: translateY(-3px);
 }
 
-/* Back Button Styling */
+/* Links */
+ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: white;
+}
+
+/* Back Button */
 #backButton {
-    display: none;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #ff4757;
+    background: #333;
     color: white;
     border: none;
+    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background 0.3s;
+    margin-top: 15px;
 }
 
 #backButton:hover {
-    background: #e84118;
-    transform: scale(1.05);
+    background: #555;
 }
 
-/* Smooth Page Transitions */
-.fade-enter {
-    opacity: 0;
-    transform: translateY(-20px);
+/* Smooth Transition Effects */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
 }
 
-.fade-enter-active {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
