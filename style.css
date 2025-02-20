@@ -1,100 +1,82 @@
-/* Modern, Aesthetic CSS for PYQs Website */
+/* Modern and Aesthetic Styling for PYQs Website */
 
-/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #74ebd5, #acb6e5);
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    transition: background 0.3s ease-in-out;
-}
-
-/* Container Styling */
-.container {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.container:hover {
-    transform: scale(1.02);
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
 }
 
-/* Title Styling */
 h1 {
-    color: #333;
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
-/* List Styling */
 ul {
     list-style: none;
     padding: 0;
 }
 
-ul li {
+li {
     margin: 10px 0;
-    padding: 10px;
-    background: #fff;
+}
+
+li a {
+    display: block;
+    padding: 12px;
+    background: #4db6ac;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
     border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease-in-out;
 }
 
-ul li:hover {
-    background: #74ebd5;
-    transform: translateY(-3px);
+li a:hover {
+    background: #00796b;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Links */
-ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #333;
-    display: block;
-    padding: 10px;
-    transition: color 0.3s;
-}
-
-ul li a:hover {
-    color: white;
-}
-
-/* Back Button */
-#backButton {
-    background: #333;
-    color: white;
-    border: none;
+button {
     padding: 10px 15px;
-    border-radius: 5px;
+    background: #ff5252;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background 0.3s;
-    margin-top: 15px;
+    transition: all 0.3s;
 }
 
-#backButton:hover {
-    background: #555;
+button:hover {
+    background: #d32f2f;
+    transform: scale(1.05);
 }
 
-/* Smooth Transition Effects */
+/* Smooth Transitions */
 .fade-in {
     animation: fadeIn 0.5s ease-in-out;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
