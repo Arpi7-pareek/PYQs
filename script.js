@@ -84,10 +84,12 @@ function loadPDFLinks(pdfs) {
 }
 
 // Step 6: Back Button Functionality
+// Step 6: Back Button Functionality
 function goBack() {
     if (currentStep === 2) {
         document.getElementById("title").innerText = "Select Your Branch";
         loadOptions(Object.keys(data));
+        document.getElementById("backButton").style.display = "none"; // Hide Back Button
     } else if (currentStep === 3) {
         document.getElementById("title").innerText = "Select Your Subject";
         loadOptions(Object.keys(data[selectedBranch]));
@@ -97,6 +99,13 @@ function goBack() {
     }
     currentStep--;
 }
+
+// Step 7: Load First Page (Branches)
+document.addEventListener("DOMContentLoaded", () => {
+    loadOptions(Object.keys(data));
+    document.getElementById("backButton").style.display = "none"; // Hide Back Button on Load
+});
+
 
 // Step 7: Load First Page (Branches)
 document.addEventListener("DOMContentLoaded", () => {
