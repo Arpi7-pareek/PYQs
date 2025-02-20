@@ -3,22 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Previous Year Question Papers</title>
+    <title>PYQs Navigation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Previous Year Question Papers</h1>
-        <p>Select a subject to view question papers:</p>
-       <div class="subjects">
-    <a href="subjects/mathematics.html">Mathematics</a>
-    <a href="subjects/chemistry.html">Chemistry</a>
-    <a href="subjects/english.html">English</a>
-    <a href="subjects/physics.html">Physics</a>
-    <a href="subjects/bee.html">BEE</a>
-    <a href="subjects/wt.html">WT</a>
-    <a href="subjects/pps.html">PPS</a>
-</div>
+        <h1 id="title">Select Your Branch</h1>
+        <ul id="options"></ul>
+        <button id="backButton" style="display: none;" onclick="goBack()">Back</button>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
